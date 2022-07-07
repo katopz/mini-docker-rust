@@ -8,7 +8,11 @@ This repo is trying to keep the docker overhead to a minimum without sacrificing
 
 ## See for yourself
 
-You don't need to install anything besides docker. Build with `docker build -t mini-docker-rust .` and run with `docker run mini-docker-rust`.
+You don't need to install anything besides docker.
+
+1. Build with `docker build -t mini-docker-rust .`
+1. and run with `docker run -p 8080:8080 mini-docker-rust`.
+1. `curl http://0.0.0.0:8080` or `open http://localhost:8080`.
 
 ## Annotated docker file
 
